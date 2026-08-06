@@ -30,7 +30,7 @@
 * **Anti-Cheat & PC Check Dostu:** Olay günlükleri (Event Logs), Prefetch veya USN Journal iz kayıtlarına dokunmaz. Sunucu PC Check kontrollerinde "Clearing" uyarısı vermez.
 
 ### 🛠️ Nasıl Kullanılır?
-1. `optimizasyon.bat` dosyasını indirin.
+1. `FPS_Tweaks.bat` dosyasını indirin.
 2. Dosyaya sağ tıklayıp **Yönetici Olarak Çalıştır**'ı seçin.
 3. İşlem tamamlandıktan sonra bilgisayarınızı **yeniden başlatın**.
 
