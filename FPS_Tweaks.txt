@@ -86,3 +86,92 @@
 ================================================================================
 🎉 Bütün adımları tamamladıktan sonra bilgisayarı bir kez YENİDEN BAŞLATIN!
 ================================================================================
+
+================================================================================
+                 🚀 REMAINING MANUAL OPTIMIZATION GUIDE
+================================================================================
+
+📌 PHASE 1: BIOS & HARDWARE SETTINGS
+--------------------------------------------------------------------------------
+[ ] 1.1. Resizable BAR (ReBAR / SAM)
+    • Restart your PC and press DEL or F2 to enter BIOS.
+    • Go to Advanced or PCIe Configuration menu.
+    • Set Above 4G Decoding ➔ Enabled.
+    • Set Re-Size BAR Support ➔ Auto or Enabled.
+    • Press F10 to save and exit.
+
+[ ] 1.2. XMP / DOCP (RAM Frequency)
+    • Check your RAM MHz value via Task Manager > Performance > Memory.
+    • If your RAM is not running at its original speed, enter BIOS and enable XMP (DOCP / EXPO).
+
+
+📌 PHASE 2: WINDOWS MANUAL SETTINGS
+--------------------------------------------------------------------------------
+[ ] 2.1. Monitor Refresh Rate (Hz)
+    • Go to Settings > System > Display > Advanced display settings.
+    • Select the highest supported Hz value for your monitor.
+
+[ ] 2.2. System Visual Effects (sysdm.cpl)
+    • Press Win + R, type "sysdm.cpl" and press Enter.
+    • Go to Advanced > Performance > Settings.
+    • Select "Adjust for best performance".
+    • To keep visual clarity, ONLY check these two boxes:
+      [x] Smooth edges of screen fonts
+      [x] Show thumbnails instead of icons
+
+[ ] 2.3. Task Manager Startup
+    • Open Task Manager with Ctrl + Shift + Esc.
+    • Disable unnecessary apps (including Discord) from the Startup tab.
+
+[ ] 2.4. Graphics Performance Preference
+    • Go to Settings > System > Display > Graphics settings.
+    • Click "Browse" and add the .exe files of the games you play.
+    • Click on the added games, select Options > "High Performance".
+
+[ ] 2.5. Graphics Card Driver
+    • Download and update your graphics driver from its official website (NVIDIA / AMD / Intel).
+    • Never use 3rd-party driver booster software.
+
+
+📌 PHASE 3: FR33THY ULTIMATE OPTIMIZATION PACK
+--------------------------------------------------------------------------------
+(Download the Fr33thy Ultimate Repo, extract it from ZIP, and temporarily disable your antivirus).
+
+[ ] 3.1. Script Permission
+    • Run "AllowScripts" as administrator, type 1 and press Enter.
+
+[ ] 3.2. "3 Setup" Folder
+    • Right-click the file > Properties > Open with > Choose Windows PowerShell.
+    • Open the "Background Apps" file and press 1.
+
+[ ] 3.3. "5 Graphics" Folder
+    • Open the folder specific to your GPU brand (Nvidia / AMD / Intel).
+    • Open the "Settings" file and press 1.
+    • Open the "MSI Mode" app and press 1.
+    • If you use Nvidia, open the "8 P0 State" file.
+    • Download and install the required packages from the DirectX and C++ folders.
+
+[ ] 3.4. "6 Windows" Folder
+    • Open "1 Start Menu Taskbar Clean" and press 1.
+    • Open "6 Signout Lockscreen Wallpaper Black" and press 1.
+    • Open "30 Timer Resolution" and press 1.
+
+
+📌 PHASE 4: IN-APP PERFORMANCE SETTINGS
+--------------------------------------------------------------------------------
+[ ] 4.1. Steam Settings
+    • Steam > Settings > Interface > Advanced: Disable all options.
+    • Steam > Settings > Library:
+      [x] Low Bandwidth Mode ➔ Enable
+      [x] Low Performance Mode ➔ Enable
+      [x] Disable Community Content ➔ Enable
+
+[ ] 4.2. Discord Settings
+    • Go to Discord > Settings > Advanced.
+    • TURN OFF "Hardware Acceleration" and restart Discord.
+
+💡 NOTE: If you experience occasional micro-stutters after the "bcdedit /set disabledynamictick yes" command, you can open CMD as administrator and type "bcdedit /set disabledynamictick no".
+
+================================================================================
+🎉 After completing all the steps, RESTART your computer once!
+================================================================================
