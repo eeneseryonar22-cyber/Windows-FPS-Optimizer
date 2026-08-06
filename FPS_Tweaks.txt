@@ -47,6 +47,7 @@
 📌 AŞAMA 3: FR33THY ULTIMATE OPTIMIZATION PAKETİ
 --------------------------------------------------------------------------------
 (Fr33thy Ultimate Repo dosyasını indirip ZIP'ten çıkarın, antivirüsü geçici kapatın).
+https://github.com/FR33THYFR33THY/Ultimate
 
 [ ] 3.1. Script İzni
     • "AllowScripts" dosyasını yönetici olarak çalıştırın, 1 yazıp Enter'a basın.
