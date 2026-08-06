@@ -8,12 +8,12 @@
 
 ## 🛡️ Special Note for Admins / PC Checkers (Yetkililer İçin Özel Not)
 
-> **TR:** Bu betik sadece standart Windows performans ve registry ayarlarını yapılandırır. 
+> **TR:** Bu betik sadece standart Windows performans ve registry ayarlarını yapılandırır.  
 > - **Event Logs (Olay Günlükleri)**, **Prefetch**, **BAM**, **USN Journal** veya **MUI Cache** gibi hiçbir delil/iz kaydını **SİLMEZ**.
 > - Telemetry dinleyicilerini durdurmaz veya log karartma (clearing) işlemi **YAPMAZ**.
 > - PC Check araçlarında veya log analizlerinde "Delil Karartma / Clearing" uyarısı verdirecek hiçbir komut içermez.
 
-> **EN:** This script only configures standard Windows performance and registry tweaks.
+> **EN:** This script only configures standard Windows performance and registry tweaks.  
 > - It **DOES NOT CLEAR** or tamper with **Event Logs**, **Prefetch**, **BAM**, **USN Journal**, or **MUI Cache**.
 > - It contains zero log-wiping, telemetry-stopping, or clearing routines.
 > - Fully transparent and 100% safe for server PC Check tools & anti-cheat engines.
@@ -33,6 +33,11 @@
   * Windows görsel efektleri, başlangıç yöneticisi ve ekran kartı sürücü yapılandırmaları.
   * Fr33thy paketleri ve uygulama içi (Steam, Discord) performans ayarları.
 
+### ⚠️ OLED Ekran Kullanıcıları İçin Önemli Not (Yanma / Burn-in Riski)
+> **TR:** OLED paneller her pikselin kendi ışığını üretmesi nedeniyle harika bir görüntü sunar; ancak uzun süre ekranda kalan sabit öğeler piksellerin fiziksel olarak aşınmasına ve **kalıcı yanma (burn-in)** riskine yol açabilir. 
+> - **Performans Modları ve Yüksek Parlaklık:** Güç ve performans modları doğrudan pikselleri yakmaz, ancak ekranı sürekli yüksek parlaklıkta tutmaya meyilli olabilir. Yüksek parlaklık ve beraberindeki ısı, OLED piksellerin eskime sürecini hızlandırabilir.
+> - **Alınabilecek Önlemler:** Bilgisayar başından kalkıldığında ekranın otomatik kararmasını veya uyku moduna girmesini kapatmayın; görev çubuğunu otomatik gizleme (auto-hide) moduna alın ve masaüstü simgelerini gizleyerek sabit siyah arka planlar tercih edin.
+
 ### 🛠️ Nasıl Kullanılır?
 1. **Otomatik:** `FPS_Tweaks.bat` dosyasına sağ tıklayıp **Yönetici Olarak Çalıştır**'ı seçin ve ardından bilgisayarınızı yeniden başlatın.
 2. **Manuel:** `FPS_Tweaks.txt` dosyasındaki adımları takip ederek kapsamlı optimizasyonları manuel olarak uygulayın.
@@ -51,6 +56,11 @@
   * BIOS, ReBAR/SAM, and XMP/DOCP configurations.
   * Windows visual effects, startup management, and driver guidelines.
   * Fr33thy optimization steps and in-app (Steam, Discord) performance tweaks.
+
+### ⚠️ Important Note for OLED Monitor Users (Burn-in Risk)
+> **EN:** OLED panels offer amazing image quality because each pixel emits its own light; however, static elements left on the screen for too long can cause physical pixel wear and **permanent burn-in** risk.
+> - **Performance Modes & Brightness:** Power/performance tweaks do not burn pixels directly, but they can keep the display at higher brightness levels. High brightness and accompanied heat accelerate the aging process of OLED pixels.
+> - **Precautions:** Do not disable automatic screen timeout or sleep modes when away from your PC; enable taskbar auto-hide, hide desktop icons, and opt for static black backgrounds or frequently changing wallpapers.
 
 ### 🛠️ How to Use
 1. **Automatic:** Right-click `FPS_Tweaks.bat`, select **Run as Administrator**, and restart your PC.
