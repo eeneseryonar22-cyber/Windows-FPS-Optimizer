@@ -1,0 +1,88 @@
+================================================================================
+                       🚀 KALAN MANUEL OPTİMİZASYON REHBERİ
+================================================================================
+
+📌 AŞAMA 1: BIOS & DONANIM AYARLARI
+--------------------------------------------------------------------------------
+[ ] 1.1. Resizable BAR (ReBAR / SAM)
+    • Bilgisayarı açarken DEL veya F2 tuşuna basarak BIOS'a girin.
+    • Advanced veya PCIe Configuration menüsüne gidin.
+    • Above 4G Decoding ➔ Enabled yapın.
+    • Re-Size BAR Support ➔ Auto veya Enabled yapın.
+    • F10 tuşuna basarak ayarları kaydedip çıkın.
+
+[ ] 1.2. XMP / DOCP (RAM Frekansı)
+    • Görev Yöneticisi > Performans > Bellek sekmesinden RAM MHz değerinizi kontrol edin.
+    • RAM orijinal hızında çalışmıyorsa BIOS'a girip XMP (DOCP / EXPO) ayarını aktifleştirin.
+
+
+📌 AŞAMA 2: WINDOWS İÇİ MANUEL AYARLAR
+--------------------------------------------------------------------------------
+[ ] 2.1. Monitör Yenileme Hızı (Hz)
+    • Ayarlar > Sistem > Ekran > Gelişmiş görüntü ayarları yolunu izleyin.
+    • Monitörünüzün desteklediği en yüksek Hz değerini seçin.
+
+[ ] 2.2. Sistem Görsel Efektleri (sysdm.cpl)
+    • Win + R tuşlarına basıp "sysdm.cpl" yazın ve Enter'a basın.
+    • Gelişmiş > Performans > Ayarlar sekmesine gidin.
+    • "En iyi performans için ayarla" seçeneğini seçin.
+    • Görselliği korumak için SADECE şu iki kutuyu işaretleyin:
+      [x] Ekran yazı tipi kenarlarını düzelt
+      [x] Simgeler yerine küçük resimler göster
+
+[ ] 2.3. Görev Yöneticisi Başlangıç
+    • Ctrl + Shift + Esc ile Görev Yöneticisi'ni açın.
+    • Başlangıç sekmesinden Discord dahil gereksiz tüm uygulamaları devre dışı bırakın.
+
+[ ] 2.4. Grafik Performans Tercihi
+    • Ayarlar > Sistem > Ekran > Grafik Ayarları menüsüne gidin.
+    • "Göz at" butonuna basarak oynadığınız oyunların .exe dosyalarını ekleyin.
+    • Eklenen oyunların üzerine tıklayıp Seçenekler > "Yüksek Performans" seçin.
+
+[ ] 2.5. Ekran Kartı Sürücüsü
+    • Ekran kartı sürücünüzü kendi resmi sitesinden (NVIDIA / AMD / Intel) indirip güncel tutun.
+    • Asla 3. parti sürücü bulucu programlar kullanmayın.
+
+
+📌 AŞAMA 3: FR33THY ULTIMATE OPTIMIZATION PAKETİ
+--------------------------------------------------------------------------------
+(Fr33thy Ultimate Repo dosyasını indirip ZIP'ten çıkarın, antivirüsü geçici kapatın).
+
+[ ] 3.1. Script İzni
+    • "AllowScripts" dosyasını yönetici olarak çalıştırın, 1 yazıp Enter'a basın.
+
+[ ] 3.2. "3 Setup" Klasörü
+    • İlgili dosyaya sağ tık > Özellikler > Birlikte Aç > Windows PowerShell seçin.
+    • "Background Apps" dosyasını açıp 1'e basın.
+
+[ ] 3.3. "5 Graphics" Klasörü
+    • Ekran kartı markanıza özel klasörü açın (Nvidia / AMD / Intel).
+    • "Settings" olanı açıp 1'e basın.
+    • "MSI Mode" uygulamasını açıp 1'e basın.
+    • Nvidia kullanıyorsanız "8 P0 State" dosyasını açın.
+    • DirectX ve C++ klasörlerinden ilgili paketleri indirip kurun.
+
+[ ] 3.4. "6 Windows" Klasörü
+    • "1 Start Menu Taskbar Clean" açıp 1'e basın.
+    • "6 Signout Lockscreen Wallpaper Black" açıp 1'e basın.
+    • "30 Timer Resolution" açıp 1'e basın.
+
+
+📌 AŞAMA 4: UYGULAMA İÇİ PERFORMANS AYARLARI
+--------------------------------------------------------------------------------
+[ ] 4.1. Steam Ayarları
+    • Steam > Ayarlar > Arayüz > Gelişmiş: Tüm ayarları kapatın.
+    • Steam > Ayarlar > Kütüphane:
+      [x] Düşük Bant Genişliği Modu ➔ Etkinleştir
+      [x] Düşük Performans Modu ➔ Etkinleştir
+      [x] Topluluk İçeriğini Devre Dışı Bırak ➔ Etkinleştir
+
+[ ] 4.2. Discord Ayarları
+    • Discord > Ayarlar > Gelişmiş sekmesine gidin.
+    • "Donanım İvmesi" seçeneğini KAPATIN ve Discord'u yeniden başlatın.
+
+💡 NOT: "bcdedit /set disabledynamictick yes" komutu sonrası nadiren anlık takılma yaşarsanız CMD'yi yönetici olarak açıp "bcdedit /set disabledynamictick no" yazabilirsiniz.
+
+================================================================================
+🎉 Bütün adımları tamamladıktan sonra bilgisayarı bir kez YENİDEN BAŞLATIN!
+================================================================================
