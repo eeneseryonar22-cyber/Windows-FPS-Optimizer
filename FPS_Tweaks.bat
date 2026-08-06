@@ -11,7 +11,7 @@ if %errorLevel% neq 0 (
 )
 
 echo ====================================================
-echo   Windows FPS, Input Lag ve Sistem Optimizasyonu
+echo    Windows FPS, Input Lag ve Sistem Optimizasyonu
 echo ====================================================
 echo.
 
@@ -77,10 +77,10 @@ reg add "HKCU\Control Panel\Colors" /v "Background" /t REG_SZ /d "0 0 0" /f >nul
 :: Teslim Iyilestirme Kapali
 reg add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DeliveryOptimization\Config" /v "DODownloadMode" /t REG_DWORD /d 0 /f >nul
 
-:: 4. POWERSHELL BLOATWARE (44 PAKET) & OZEL GIZLILIK IZINLERI
+:: 4. POWERSHELL BLOATWARE (ZuneVideo Cikarildi) & OZEL GIZLILIK IZINLERI
 echo [3/5] Bloatware Temizligi ve Ozel Gizlilik Izinleri Ayarlaniyor...
 
-powershell -NoProfile -ExecutionPolicy Bypass -Command "$apps = @('Clipchamp.Clipchamp','Microsoft.3DBuilder','Microsoft.549981C3F5F10','Microsoft.BingFinance','Microsoft.BingFoodAndDrink','Microsoft.BingHealthAndFitness','Microsoft.BingNews','Microsoft.BingSports','Microsoft.BingTranslator','Microsoft.BingTravel','Microsoft.BingWeather','Microsoft.Windows.AIHub','Microsoft.PCManager','Microsoft.Getstarted','Microsoft.Messaging','Microsoft.Microsoft3DViewer','Microsoft.MicrosoftJournal','Microsoft.MicrosoftOfficeHub','Microsoft.MicrosoftPowerBIForWindows','Microsoft.MicrosoftSolitaireCollection','Microsoft.MicrosoftStickyNotes','Microsoft.MixedReality.Portal','Microsoft.News','Microsoft.Office.OneNote','Microsoft.Office.Sway','Microsoft.OneConnect','Microsoft.Print3D','Microsoft.PowerAutomateDesktop','Microsoft.SkypeApp','Microsoft.Todos','Microsoft.Windows.DevHome','Microsoft.WindowsAlarms','Microsoft.WindowsFeedbackHub','Microsoft.WindowsMaps','Microsoft.WindowsSoundRecorder','Microsoft.XboxApp','Microsoft.ZuneVideo','MicrosoftCorporationII.MicrosoftFamily','MicrosoftCorporationII.QuickAssist','MicrosoftTeams','MSTeams','Microsoft.People','Microsoft.windowscommunicationsapps'); foreach ($a in $apps) { Get-AppxPackage -AllUsers $a | Remove-AppxPackage -ErrorAction SilentlyContinue }" >nul 2>&1
+powershell -NoProfile -ExecutionPolicy Bypass -Command "$apps = @('Clipchamp.Clipchamp','Microsoft.3DBuilder','Microsoft.549981C3F5F10','Microsoft.BingFinance','Microsoft.BingFoodAndDrink','Microsoft.BingHealthAndFitness','Microsoft.BingNews','Microsoft.BingSports','Microsoft.BingTranslator','Microsoft.BingTravel','Microsoft.BingWeather','Microsoft.Windows.AIHub','Microsoft.PCManager','Microsoft.Getstarted','Microsoft.Messaging','Microsoft.Microsoft3DViewer','Microsoft.MicrosoftJournal','Microsoft.MicrosoftOfficeHub','Microsoft.MicrosoftPowerBIForWindows','Microsoft.MicrosoftSolitaireCollection','Microsoft.MicrosoftStickyNotes','Microsoft.MixedReality.Portal','Microsoft.News','Microsoft.Office.OneNote','Microsoft.Office.Sway','Microsoft.OneConnect','Microsoft.Print3D','Microsoft.PowerAutomateDesktop','Microsoft.SkypeApp','Microsoft.Todos','Microsoft.Windows.DevHome','Microsoft.WindowsAlarms','Microsoft.WindowsFeedbackHub','Microsoft.WindowsMaps','Microsoft.WindowsSoundRecorder','Microsoft.XboxApp','MicrosoftCorporationII.MicrosoftFamily','MicrosoftCorporationII.QuickAssist','MicrosoftTeams','MSTeams','Microsoft.People','Microsoft.windowscommunicationsapps'); foreach ($a in $apps) { Get-AppxPackage -AllUsers $a | Remove-AppxPackage -ErrorAction SilentlyContinue }" >nul 2>&1
 
 powershell -NoProfile -ExecutionPolicy Bypass -Command "winget uninstall --id XP9CXNGPPJ97XX --accept-source-agreements --silent" >nul 2>&1
 
@@ -94,10 +94,16 @@ if exist "C:\Windows\System32\OneDriveSetup.exe" "C:\Windows\System32\OneDriveSe
 if exist "C:\Windows\SysWOW64\OneDriveSetup.exe" "C:\Windows\SysWOW64\OneDriveSetup.exe" /uninstall >nul 2>&1
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem -Path '$env:LOCALAPPDATA\Microsoft\OneDrive\*\OneDriveSetup.exe' -ErrorAction SilentlyContinue | ForEach-Object { & $_.FullName /uninstall }" >nul 2>&1
 
+:: 6. LTSC ICIN EKSIK UYGULAMALARI GUNCEL KURMA (Hesap Makinesi, Fotograflar, Filmler ve TV)
+echo [5/5] LTSC Sistemler icin Eksik Uygulamalar Yukleniyor...
+winget install --id Microsoft.WindowsCalculator -e --silent --accept-package-agreements --accept-source-agreements >nul 2>&1
+winget install --id Microsoft.Photos -e --silent --accept-package-agreements --accept-source-agreements >nul 2>&1
+winget install --id Microsoft.ZuneVideo -e --silent --accept-package-agreements --accept-source-agreements >nul 2>&1
+
 echo.
 echo ====================================================
-echo   TUM AYARLAR VE REGEDIT KAYITLARI TAMAMLANDI!
-echo   Lutfen bilgisayarinizi YENIDEN BASTATIN.
+echo    TUM AYARLAR VE REGEDIT KAYITLARI TAMAMLANDI!
+echo    Lutfen bilgisayarinizi YENIDEN BASTATIN.
 echo ====================================================
 echo.
 echo Kapatmak icin bir tusa basin...
